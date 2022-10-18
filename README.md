@@ -6,10 +6,10 @@ An overview, with solutions and explanation of exercises in chapters one to thre
 Chapter one starts off by talking about data and how they are stored as sequences of ones and zeros called *bits*. To work with them, you must separate them into chunks called *values*. Every value has a type that determines it's role. 
 
 The different value types are
-* Number type - written as numeric values e.g 13. This value will appear as a bit pattern in the computer's memory. The number type also has  3 special numbers. `Infinity` representing positive infinity, `-Infinity` representing negative infinity and `NAN` which stands for "not a number" and is the result of a stupid computation in your program
+* Number type - written as numeric values e.g 13. This value will appear as a bit pattern in the computer's memory. The number type also has  3 special numbers. `Infinity` representing positive infinity, `-Infinity` representing negative infinity and `NaN` which stands for "not a number" and is the result of a stupid computation in your program
 * String type -  are used to represent text and can be written by enclosing their context in  back ticks - \``hello world`\`, single quotes - `'hello world'` or double quotes - `"hello world"`. Back ticks or template literals can do a few tricks single and double quotes can't. They can help us span lines without escaping and we can embed values using the `${}` notation. String values are also modeled as bits to be able to exist in the computer but this is done based on the *unicode standard*
 * Boolean type - a way to indicate a yes or no, or on and off. They have two values `true` and `false`
-*Empty values - used to denote the absence of a meaningful value. often represented with `null` or `undefined`. They are themselves values but carry no value.
+* Empty values - used to denote the absence of a meaningful value. often represented with `null` or `undefined`. They are themselves values but carry no value.
 
 Values can be transformed and combined using *Operators*. Operators can be unary(operating on one value), binary(operating on two values) or ternary(operating on three values). Operators that act on the Number type are known as the arithmetic operators and are binary. They include `+`, `-`, `\`, `*` and the modulo operator `%` that returns the remainder of the division of two numbers `X` and `Y`. `-` can act as a unary operator on number values as it negates them.
 `+` on string types concatenates them(glues them together) to form a new word. 
