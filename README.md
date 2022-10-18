@@ -143,7 +143,7 @@ A *Recursive fuction* is one that calls itself. You can re-call a function as lo
     
 To create this program, i defined a binding `text`  passing it an empty string `""`. Then i wrote two `for` loops. The first one to fill each line of         `text` and second/inner loop to fill the contents of that line. Then i used the *modulo* operator to alternate the pattern for every line. It is              important to    note that if the result of a *modulo* operator between any positive number and 2 returns a `0` then that number is even else it is odd.      The      result of my first iteration added to results of my second iteration(which must finish running before going back to my first iteration)              *modulo* 2 determines how my line looks. If it starts with an even number than my line starts with a `" "` else a `"#"` and subsequent items on the line      are     alternated based on this. At the end of each first iteration, i split with a `"\n"` character. After i got this working, i defined the              binding size to get it working for any length 
     
-        ```javascript
+```javascript
       let size = 8
       let text = ''
 
@@ -157,7 +157,7 @@ To create this program, i defined a binding `text`  passing it an empty string `
          }
         text += "\n"
      }
-      ```
+  ```
     
 ### Chapter Three: Functions
 * 3.1  Minimum
