@@ -139,9 +139,9 @@ A *Recursive fuction* is one that calls itself. You can re-call a function as lo
   ```
    * 2.3 Chess Board
     
-    This exercise required me to write a program to create an 8 x 8 grid chess board from a string. Each line, split with a newline character `"\n"` would       alternate starting with a `"#"` or a `" "`. And for the length of each line, we alternate the same pattern.
+ This exercise required me to write a program to create an 8 x 8 grid chess board from a string. Each line, split with a newline character `"\n"` would       alternate starting with a `"#"` or a `" "`. And for the length of each line, we alternate the same pattern.
     
-    To create this program, i defined a binding `text`  passing it an empty string `""`. Then i wrote two `for` loops. The first one to fill each line of         `text` and second/inner loop to fill the contents of that line. Then i used the *modulo* operator to alternate the pattern for every line. It is              important to    note that if the result of a *modulo* operator between any positive number and 2 returns a `0` then that number is even else it is odd.      The      result of my first iteration added to results of my second iteration(which must finish running before going back to my first iteration)              *modulo* 2 determines how my line looks. If it starts with an even number than my line starts with a `" "` else a `"#"` and subsequent items on the line      are     alternated based on this. At the end of each first iteration, i split with a `"\n"` character. After i got this working, i defined the              binding size to get it working for any length 
+To create this program, i defined a binding `text`  passing it an empty string `""`. Then i wrote two `for` loops. The first one to fill each line of         `text` and second/inner loop to fill the contents of that line. Then i used the *modulo* operator to alternate the pattern for every line. It is              important to    note that if the result of a *modulo* operator between any positive number and 2 returns a `0` then that number is even else it is odd.      The      result of my first iteration added to results of my second iteration(which must finish running before going back to my first iteration)              *modulo* 2 determines how my line looks. If it starts with an even number than my line starts with a `" "` else a `"#"` and subsequent items on the line      are     alternated based on this. At the end of each first iteration, i split with a `"\n"` character. After i got this working, i defined the              binding size to get it working for any length 
     
         ```javascript
       let size = 8
@@ -190,7 +190,7 @@ For this exercise, I wrote a function `countBs` that takes a string as an argume
 
 After creating my function, i defined a local binding `num` and assigned the number `0` to it. Then i wrote a `for` loop to iterate through each letter of my string. And in this loop, my `num` binding is incremented by 1 everytime a `"B"` is found in my string. After the loop is done with it's iteration, i return the value of my updated `num` binding.
 
-After i got this working, I wrote another function `countChar` that behaves the same way as `countBs` except it takes another argument to determine which character we would like to count(instead of just Uppercase B's)
+After i got this working, I wrote another function `countChar` that behaves the same way as `countBs` except it takes another argument to determine which character we would like to count(instead of just Uppercase B's). Finally i rewrote my `countBs` function as `countBsTwo` implementing the `countChar` function
 
 ```javascript
   function countBs(string) {
@@ -212,6 +212,9 @@ After i got this working, I wrote another function `countChar` that behaves the 
      }
      return num
    }
-
+  
+  function countBsTwo(string) {
+     return countChar(string, "B")
+ }
 
 ```
