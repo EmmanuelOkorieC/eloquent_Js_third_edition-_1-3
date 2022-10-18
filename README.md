@@ -1,5 +1,5 @@
 # Eloquent Javascript, 3rd Edition: A modern Introduction to programming
-An overview, with solutions and explanation of exercises in chapters one to three of the ebook Eloquent Javascript, 3rd Edition by Marijn Haverbeke
+An overview, with solutions and explanation of exercises in chapters one to three of the ebook [Eloquent Javascript, 3rd Edition](https://eloquentjavascript.net/) by Marijn Haverbeke
 
 ## Overview
 ### Chapter One: Values, Types, and Operators
@@ -108,7 +108,7 @@ A *Recursive fuction* is one that calls itself. You can re-call a function as lo
    * No exercises in this Chapter
    
 ### Chapter Two: Program Structure
-   * 2.1 Looping a Triangle
+   * 2.1 [Looping a Triangle](https://github.com/EmmanuelOkorieC/eloquent_Js_third_edition-_1-3/blob/main/chapter%202%20exercises/loopingTriangle.js)
    
    For this exercise, i had to make seven calls to `console.log` to output the string `"#"` but each time adding an extra `"#"`. To do this i defined a binding `text` with an empty string then i wrote a `while` loop comparing my string's length to 7 using the `<` operator. Then for each iteration, i concatenated a `"#"` and then passed `text` to `console.log`
    ```javascript
@@ -119,7 +119,7 @@ A *Recursive fuction* is one that calls itself. You can re-call a function as lo
 }
    ```
    
-   * 2.2 FizzBuzz
+   * 2.2 [FizzBuzz](https://github.com/EmmanuelOkorieC/eloquent_Js_third_edition-_1-3/blob/main/chapter%202%20exercises/fizzBuzz.js)
    
    For this exercise, i had to write a program that prints  all the numbers from 1 to 100 with 3 exceptions. numbers divisible by 5 and 3 print `"FizzBuzz"`, numbers divisible by only 3 print `"Fizz"` and numbers divisible by only 5 print `"Buzz"`
    
@@ -160,7 +160,7 @@ To create this program, i defined a binding `text`  passing it an empty string `
   ```
     
 ### Chapter Three: Functions
-* 3.1  Minimum
+* 3.1  [Minimum](https://github.com/EmmanuelOkorieC/eloquent_Js_third_edition-_1-3/blob/main/chapter%203%20exercises/minimum.js)
 
  For this exercise i had to write my own version of the `Math.min` function that takes two arguments and returns the minimum
  
@@ -171,7 +171,7 @@ To create this program, i defined a binding `text`  passing it an empty string `
        else return b
    }
  ```
-* 3.2  Recursion
+* 3.2  [Recursion](https://github.com/EmmanuelOkorieC/eloquent_Js_third_edition-_1-3/blob/main/chapter%203%20exercises/recursion.js)
 
     For this exercise, i wrote a function `isEven` that takes a number value as an argument and implements recursion to check if that number is odd or even. An even number returns `true`, and an odd number returns `false`.
 It is important to note that if you recursively remove 2 from a number and it's remainder is `0`, that number is even and if the remainder is `1`, that number is odd. I will use this to define a break from my recursive call.
@@ -184,7 +184,7 @@ I also made it possible to call the function `isEven` with a negative number. My
        else return isEven(n - 2)
    }
 ```
-* 3.3 Bean Counting
+* 3.3 [Bean Counting](https://github.com/EmmanuelOkorieC/eloquent_Js_third_edition-_1-3/blob/main/chapter%203%20exercises/beanCounting.js)
 
 For this exercise, I wrote a function `countBs` that takes a string as an argument and returns the number of Uppercase B's in that string
 
