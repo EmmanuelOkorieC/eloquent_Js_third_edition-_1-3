@@ -1,5 +1,5 @@
 # Eloquent Javascript, 3rd Edition: A modern Introduction to programming
-An overview, with solutions and explanation of exercises in chapters one to three of the ebook [Eloquent Javascript, 3rd Edition](https://eloquentjavascript.net/) by Marijn Haverbeke
+An overview, with solutions and explanation of exercises in chapters one to three of the ebook [Eloquent Javascript, 3rd Edition](https://eloquentjavascript.net/Eloquent_JavaScript.pdf) by Marijn Haverbeke
 
 ## Overview
 ### Chapter One: Values, Types, and Operators
