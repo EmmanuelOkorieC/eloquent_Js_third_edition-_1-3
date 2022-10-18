@@ -118,7 +118,7 @@ A *Recursive fuction* is one that calls itself. You can re-call a function as lo
       console.log(text)
 }
    ```
-   *2.2 FizzBuzz
+   * 2.2 FizzBuzz
    
    For this exercise, i had to write a program that prints  all the numbers from 1 to 100 with 3 exceptions. numbers divisible by 5 and 3 print `"FizzBuzz"`, numbers divisible by only 3 print `"Fizz"` and numbers divisible by only 5 print `"Buzz"`
    
@@ -136,7 +136,7 @@ A *Recursive fuction* is one that calls itself. You can re-call a function as lo
        }
 }
   ```
-   *2.3 Chess Board
+   * 2.3 Chess Board
     
     This exercise required me to write a program to create an 8 x 8 grid chess board from a string. Each line, split with a newline character `"\n"` would alternate starting with a `"#"` or a `" "`. And for the length of each line, we alternate the same pattern.
     
