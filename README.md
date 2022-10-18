@@ -51,7 +51,7 @@ else console.log("large")
 ```
 we can also represent an `if`/`else` statement using a `switch`/`case` which is a bit complicated way of writing it but often has it's advantages
 
-*loop* is a control flow that runs a piece of code multiple times. it lets us go back to some point in the program where we were before and repeats it with our current program state. There are three main loops. A `for` loop, a `while` loop and a `do` loop. a `do` loop differs from a `while` loop on one point, it executes the body at least once and starts testing whether it should stop after that first execution. A `for` loop is a more nuanced style of writing a `while` loop and just like the `while` loop, contains a start value, an end value and a counte
+*loop* is a control flow that runs a piece of code multiple times. it lets us go back to some point in the program where we were before and repeats it with our current program state. There are three main loops. A `for` loop, a `while` loop and a `do` loop. a `do` loop differs from a `while` loop on one point, it executes the body at least once and starts testing whether it should stop after that first execution. A `for` loop is a more nuanced style of writing a `while` loop and just like the `while` loop, contains a start value, an end value and a counter
 ```Javascript
 for (let i = 0; i < 10; i = i + 1) {
      console.log(i)
@@ -93,7 +93,7 @@ Function declarations are not part of the top to bottom flow of control so you c
 
 Arrow functions are another way to describe functions. It uses an (=>) instead of the `function` keyword `const square = (x) => {return x * x; };`. You can also write them without the `return` keyword or braces if you are only returning a single expression `const square = x => x * x`
 
-The *call stack* is the place the computer stores the context for every function call. The current context is stored on top of this stack.
+The *call stack* is the place the computer stores the context for every function call. The current context is stored on top of the stack.
 When a function returns, it removes the top context from the stack and uses that context to continue execution.
 Storing the stack requires space in the computer's memory. When it grows too big, the computer will fail with a "out of stack space" or "too much recursion" message.
 
