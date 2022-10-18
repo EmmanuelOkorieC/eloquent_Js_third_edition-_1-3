@@ -21,3 +21,8 @@ function countBs(string) {
   }
   
   console.log(countChar("aBBBBcdss", "s"))
+
+  function countBsTwo(string) {
+      return countChar(string, "B")
+ }
+  console.log(countBsTwo("aBBBBBs"))
