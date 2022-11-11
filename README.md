@@ -110,7 +110,7 @@ A *Recursive fuction* is one that calls itself. You can re-call a function as lo
 ### Chapter Two: Program Structure
    * 2.1 [Looping a Triangle](https://github.com/EmmanuelOkorieC/eloquent_Js_third_edition-_1-3/blob/main/chapter%202%20exercises/loopingTriangle.js)
    
-   For this exercise, i had to make seven calls to `console.log` to output the string `"#"` but each time adding an extra `"#"`. To do this i defined a binding `text` with an empty string then i wrote a `while` loop comparing my string's length to 7 using the `<` operator. Then for each iteration, i concatenated a `"#"` and reassigned it to `text`. Then passed `text` to `console.log`
+   For this exercise, i had to make seven calls to `console.log` to output the string `"#"` but each time adding an extra `"#"`. To do this i defined a binding `text` with an empty string 
    ```javascript
    let text = ''
    while(text.length < 7) {
@@ -118,6 +118,8 @@ A *Recursive fuction* is one that calls itself. You can re-call a function as lo
       console.log(text)
 }
    ```
+   Then i wrote a `while` loop that ends when the string's length is 7 and for each iteration, i concatenated a `"#"` and reassigned it to `text`, then passed `text` to `console.log`
+   
    
    * 2.2 [FizzBuzz](https://github.com/EmmanuelOkorieC/eloquent_Js_third_edition-_1-3/blob/main/chapter%202%20exercises/fizzBuzz.js)
    
@@ -139,11 +141,20 @@ A *Recursive fuction* is one that calls itself. You can re-call a function as lo
   ```
    * 2.3 [Chess Board](https://github.com/EmmanuelOkorieC/eloquent_Js_third_edition-_1-3/blob/main/chapter%202%20exercises/chessBoard.js)
     
- This exercise required me to write a program to create an 8 x 8 grid chess board from a string. Each line, split with a newline character `"\n"` would       alternate starting with a `"#"` or a `" "`. And for the length of each line, i would alternate the same pattern.
+ This exercise required me to write a program to create an 8 x 8 grid chess board from a string. Each line, split with a newline character `"\n"` would  alternate starting with a `"#"` or a `" "`. And for the length of each line, it would alternate the same pattern.
+    ```
+      # # # #
+    # # # #
+      # # # #
+    # # # #
+      # # # #
+    # # # #
+      # # # #
+    # # # #
+    ```
     
-To create this program, i defined a binding `text`  passing it an empty string `""`. Then i wrote two `for` loops. The first one to fill each line of         `text` and second/inner loop to fill the contents of that line. Then i used the *modulo* operator to alternate the pattern for every line. It is              important to note that if the result of a *modulo* operator between any positive number and 2 returns a `0` then that number is *even* else it is *odd*.  The      result of iterating the first `foor` loop added to results of the iteration of the second `for` loop (which must finish running before going back to the first `for` loop)          *modulo* 2 determines how the line looks. If it starts with an even number then the line starts with a `" "` else a `"#"` and subsequent items on the line      are     alternated based on this. At the end of each iteration of the first `for` loop, i split with a `"\n"` character. After i got this working, i defined the              binding size to get it working for any length 
-    
-```javascript
+   To create this program, i defined a binding `text`  and assigned an empty string `""`. 
+   ```javascript
       let size = 8
       let text = ''
 
@@ -159,24 +170,31 @@ To create this program, i defined a binding `text`  passing it an empty string `
      }
   ```
     
+   Then i wrote two `for` loops. The first one for each line of         `text` and second/inner loop to fill the contents of that line. Then i used the *modulo* operator to alternate the pattern for every line. 
+   
+   It is important to note that if the result of a *modulo* operator between any positive number and 2 returns a `0` then that number is *even* else it is *odd*.  
+   
+   If the first for loop starts with an even number then the line starts with a `" "` else a `"#"` and subsequent items on the line      are     alternated based on this. At the end of every line, i split with a `"\n"` character. After i got this working, i defined a binding `size` to get it working for any length 
+    
+
 ### Chapter Three: Functions
 * 3.1  [Minimum](https://github.com/EmmanuelOkorieC/eloquent_Js_third_edition-_1-3/blob/main/chapter%203%20exercises/minimum.js)
 
  For this exercise i had to write my own version of the `Math.min` function that takes two arguments and returns the minimum
- 
- To do this, i declared a function min that takes two arguments `a` and `b`. In the function block, i used an `if` statement to compare my two arguments using the `<` operator. if `a` is less than `b`, it returns `a` else it returns `b`
  ```javascript
     function min(a, b) {
        if (a < b) return a
        else return b
    }
  ```
+ To do this, i declared a function min that takes two arguments `a` and `b`. In the function block, i used an `if` statement to compare my two arguments using the `<` operator. if `a` is less than `b`, it returns `a` else it returns `b`
+ 
 * 3.2  [Recursion](https://github.com/EmmanuelOkorieC/eloquent_Js_third_edition-_1-3/blob/main/chapter%203%20exercises/recursion.js)
 
     For this exercise, i wrote a function `isEven` that takes a number value as an argument and implements recursion to check if that number is odd or even. An even number returns `true`, and an odd number returns `false`.
-It is important to note that if you recursively remove 2 from a number and it's remainder is `0`, that number is even and if the remainder is `1`, that number is odd. I will use this to define a break from my recursive call.
-I also made it possible to call the function `isEven` with a negative number. My function simply negates it and then recursively calls it.
-```javascript
+    
+  It is important to note that if you recursively remove 2 from a number and it's remainder is `0`, that number is even and if the remainder is `1`, that number is odd. I used this to define a break from my recursive call.
+  ```javascript
    function isEven(n) {
        if (n == 0) return true
        else if (n == 1) return false
@@ -184,14 +202,11 @@ I also made it possible to call the function `isEven` with a negative number. My
        else return isEven(n - 2)
    }
 ```
+I also made it possible to call the function `isEven` with a negative number. My function simply negates it and then recursively calls it.
+
 * 3.3 [Bean Counting](https://github.com/EmmanuelOkorieC/eloquent_Js_third_edition-_1-3/blob/main/chapter%203%20exercises/beanCounting.js)
 
-For this exercise, I wrote a function `countBs` that takes a string as an argument and returns the number of Uppercase B's in that string
-
-After creating my function, i defined a local binding `num` and assigned the number `0` to it. Then i wrote a `for` loop to iterate through each letter of my string. And in this loop, my `num` binding is incremented by 1 everytime a `"B"` is found in my string. After the loop is done with it's iteration, i return the value of my updated `num` binding.
-
-After i got this working, I wrote another function `countChar` that behaves the same way as `countBs` except it takes another argument to determine which character we would like to count (instead of just Uppercase B's). Finally i rewrote the `countBs` function as `countBsTwo` implementing the `countChar` function
-
+  For this exercise, I wrote a function `countBs` that takes a string as an argument and returns the number of Uppercase B's in that string
 ```javascript
   function countBs(string) {
      let num = 0
@@ -202,7 +217,11 @@ After i got this working, I wrote another function `countChar` that behaves the 
      }
      return num
   }
+```
+   I defined a local binding `num` in the function and assigned the number `0` to it. Then i wrote a `for` loop to iterate through each letter of the string. And in this loop, the `num` binding is incremented by 1 everytime a `"B"` is found in the string. After iterating through the string, i returned the value of the updated `num` binding.
 
+  After i got this working, I wrote another function `countChar` that behaves the same way as `countBs` except it takes another argument to determine which character we would like to count (instead of just Uppercase B's). 
+  ```javascript
   function countChar(string, character) {
      let num = 0
      for (let i = 0; i < string.length; i++) {
@@ -216,5 +235,6 @@ After i got this working, I wrote another function `countChar` that behaves the 
   function countBsTwo(string) {
      return countChar(string, "B")
  }
+ ```
+  Finally i rewrote the `countBs` function as `countBsTwo` implementing the `countChar` function
 
-```
