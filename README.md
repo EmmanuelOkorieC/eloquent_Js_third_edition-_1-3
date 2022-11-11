@@ -142,7 +142,8 @@ A *Recursive fuction* is one that calls itself. You can re-call a function as lo
    * 2.3 [Chess Board](https://github.com/EmmanuelOkorieC/eloquent_Js_third_edition-_1-3/blob/main/chapter%202%20exercises/chessBoard.js)
     
  This exercise required me to write a program to create an 8 x 8 grid chess board from a string. Each line, split with a newline character `"\n"` would  alternate starting with a `"#"` or a `" "`. And for the length of each line, it would alternate the same pattern.
-    ```
+    ```javascrript
+   /*
       # # # #
     # # # #
       # # # #
@@ -151,6 +152,8 @@ A *Recursive fuction* is one that calls itself. You can re-call a function as lo
     # # # #
       # # # #
     # # # #
+    
+    */
     ```
     
    To create this program, i defined a binding `text`  and assigned an empty string `""`. 
@@ -201,7 +204,7 @@ A *Recursive fuction* is one that calls itself. You can re-call a function as lo
        else if (n < 0) return isEven(-n)
        else return isEven(n - 2)
    }
-```
+   ```
 I also made it possible to call the function `isEven` with a negative number. My function simply negates it and then recursively calls it.
 
 * 3.3 [Bean Counting](https://github.com/EmmanuelOkorieC/eloquent_Js_third_edition-_1-3/blob/main/chapter%203%20exercises/beanCounting.js)
