@@ -142,16 +142,7 @@ A *Recursive fuction* is one that calls itself. You can re-call a function as lo
    * 2.3 [Chess Board](https://github.com/EmmanuelOkorieC/eloquent_Js_third_edition-_1-3/blob/main/chapter%202%20exercises/chessBoard.js)
     
  This exercise required me to write a program to create an 8 x 8 grid chess board from a string. Each line, split with a newline character `"\n"` would  alternate starting with a `"#"` or a `" "`. And for the length of each line, it would alternate the same pattern.
-     ```javascript
-        # # # #
-      # # # #
-        # # # #
-      # # # #
-        # # # #
-      # # # #
-        # # # #
-      # # # #
-     ```
+      ![](https://i.ibb.co/54ScyLz/image.png)
     
    To create this program, i defined a binding `text`  and assigned an empty string `""`. 
    ```javascript
