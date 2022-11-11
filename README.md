@@ -143,16 +143,14 @@ A *Recursive fuction* is one that calls itself. You can re-call a function as lo
     
  This exercise required me to write a program to create an 8 x 8 grid chess board from a string. Each line, split with a newline character `"\n"` would  alternate starting with a `"#"` or a `" "`. And for the length of each line, it would alternate the same pattern.
      ```javascript
-     /*
+        # # # #
       # # # #
-    # # # #
+        # # # #
       # # # #
-    # # # #
+        # # # #
       # # # #
-    # # # #
+        # # # #
       # # # #
-    # # # #
-    */
      ```
     
    To create this program, i defined a binding `text`  and assigned an empty string `""`. 
